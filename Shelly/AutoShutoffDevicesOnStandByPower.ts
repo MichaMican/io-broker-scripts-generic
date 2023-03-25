@@ -1,7 +1,7 @@
 const POWER_SHUTDOWN_THRESHOLD: number = 11;
 const SHUTDOWN_DELAY_SECONDS: number = 30;
-const SHELLY_PLUG_SWITCH_OBJECT_ID = 'shelly.0.SHPLG-S#80646F810CE2#1.Relay0.Switch';
-const SHELLY_PLUG_POWER_OBJECT_ID = 'shelly.0.SHPLG-S#80646F810CE2#1.Relay0.Power';
+const SHELLY_PLUG_SWITCH_OBJECT_ID = 'shelly.0.<deviceId>.Relay0.Switch';
+const SHELLY_PLUG_POWER_OBJECT_ID = 'shelly.0.<deviceId>.Relay0.Power';
 const POWER_ON_DEBOUNCE_SECONDS = 60;
 
 let lastTurnOnTimestamp: number = 0;

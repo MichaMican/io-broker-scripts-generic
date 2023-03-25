@@ -7,12 +7,12 @@ type Person = {
 
 const NAME_PLACEHOLDER = "[[[name]]]"
 const ALL_DEVICE_ACTIVE_STATE_OBJECTS_REGEX = /^tr-064\.0\.devices\..+\.active$/
-const ALEXA_SPEAK_STATE_OBJECT_ID = "alexa2.0.Echo-Devices.G2A0XL1122320160.Commands.speak"
+const ALEXA_SPEAK_STATE_OBJECT_ID = "alexa2.0.Echo-Devices.<deviceId>.Commands.speak"
 const GREETING_DELAY_SECONDS = 0;
 const MIN_TIMOUT_BETWEEN_GREETINGS_SECONDS = 10;
 const GREETING_TEXTS: string[] = [`Willkommen Zuhause ${NAME_PLACEHOLDER}`]
 const persons: Person[] = [{
-    activeStateObjectId: "tr-064.0.devices.<deviceName>.active",
+    activeStateObjectId: "tr-064.0.devices.<deviceId>.active",
     macAddress: "<MAC Address>",
     name: "<Name>",
     greetingTexts: GREETING_TEXTS,

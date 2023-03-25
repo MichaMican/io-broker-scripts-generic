@@ -1,5 +1,5 @@
-const TUMBLE_DRYER_STATUS_RAW_STATE_OBJECT_ID = "mielecloudservice.0.000177742376.status_raw"
-const TUMBLE_DRYER_ACTION_POWER_STATE_OBJECT_ID = "mielecloudservice.0.000177742376.ACTIONS.Power"
+const TUMBLE_DRYER_STATUS_RAW_STATE_OBJECT_ID = "mielecloudservice.0.<deviceId>.status_raw"
+const TUMBLE_DRYER_ACTION_POWER_STATE_OBJECT_ID = "mielecloudservice.0.<deviceId>.ACTIONS.Power"
 const SHUTDOWN_DELAY_SECONDS = 5
 
 //State 7 = Finished -> shutdown

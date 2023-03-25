@@ -1,5 +1,5 @@
-const WASHING_MACHINE_STATUS_RAW_STATE_OBJECT_ID = "mielecloudservice.0.<device>.status_raw"
-const ALEXA_SPEAK_STATE_OBJECT_ID = "alexa2.0.<device>.Commands.speak"
+const WASHING_MACHINE_STATUS_RAW_STATE_OBJECT_ID = "mielecloudservice.0.<deviceId>.status_raw"
+const ALEXA_SPEAK_STATE_OBJECT_ID = "alexa2.0.<deviceId>.Commands.speak"
 
 on({ id: WASHING_MACHINE_STATUS_RAW_STATE_OBJECT_ID, change: "ne" }, (data) => {
     let textToSay: string;
